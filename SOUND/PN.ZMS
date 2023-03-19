@@ -1,0 +1,261 @@
+.comment [   palpitating now!   ]                                      by りょお / Recomposed by Rei.
+
+(i)
+
+	/ AR D1R D2R  RR D1L  TL  RS MUL DT1 DT2 AME	Bass drum from basic magazine '89 2 /
+(@ 1	  31   0   0   0   0  10   0  13   0   0   0
+	  31  22  17   9   5   0   0   2   0   0   0
+	  31   0  16   9   0   0   0   1   0   0   0
+	  31   0  15   9   0   0   0   1   0   0   0
+	/ AL  FB  OM /
+	   6   7  15 )
+
+	/ AR D1R D2R  RR D1L  TL  RS MUL DT1 DT2 AME	Snare drum from basic magazine '89 2 /
+(@ 2	  30   0   0  15   0  10   0   2   1   2   0
+	  30  14   0  15  15   8   0   1   5   0   0
+	  28  13   0  15  15  17   0   0   0   1   0
+	  20  12   0  15  15   1   0   0   4   3   0
+	/ AL  FB  OM /
+	   4   7  15 )
+
+	/ AR D1R D2R  RR D1L  TL  RS MUL DT1 DT2 AME	E.Bass from Sion2_tone.zms(E.B) /
+(@ 3	  31  20   4   9   2  27   1   0   0   0   0
+	  31  14   4   9   2  31   1   9   0   0   0
+	  31  14   4   9   1  38   0   0   0   0   0
+	  24   7   6   9   2   0   1   1   0   0   0
+	/ AL  FB  OM /
+	   2   6  15)
+
+	/ AR 1DR 2DR  RR 1DL  TL  RS MUL DT1 DT2 AME	HiHat(+Cymbal) from sion2_tone.zms no.37 /
+(@ 4	  31   0   0   5  12  26   0  15   3   1   0
+	  31   0   0   0  10  23   0   0   3   3   0
+	  31   0   0   7  10  12   0  11   0   0   0
+	  21  17  10   9   1   0   1   4   6   3   0
+	/ AL  FB  OM /
+	   3   7  15 )
+
+	/ AR 1DR 2DR  RR 1DL  TL  RS MUL DT1 DT2 AME	Strings from Sion2_tone.zms(STR) /
+(@ 5	  31   2   0   0   1  26   0   4   3   0   0
+	  16   0   0   7   1   0   0   4   3   0   0
+	  31   0   0   0   1  25   0   8   7   0   0
+	  16   0   0   7   1   0   0   8   7   0   0
+	/ AL  FB  OM /
+	   4   6  15)
+
+	/ AR 1DR 2DR  RR 1DL  TL  RS MUL DT1 DT2 AME	Synthe brass from Sion2_tone.zms(SYNTH2) /
+(@ 6	  31   1   0   0   1  28   0   1   0   0   0
+	  27   0   0   8   0   0   0   2   0   0   0
+	  27   0   0   8   0   0   0   1   0   0   0
+	  27   0   0   8   0   0   0   1   0   0   0
+	/ AL  FB  OM /
+	   5   7  15)
+
+	/ AR 1DR 2DR  RR 1DL  TL  RS MUL DT1 DT2 AME	Bell from Sion2_tone.zms(BELL) /
+(@ 7	  31  12   0   0   1  33   0   6   3   0   0
+	  31   8   5   6   1   0   0   2   3   0   0
+	  31  12   0   0   1  27   0  10   7   0   0
+	  31   8   5   6   1   0   0   2   7   0   0
+	/ AL  FB  OM /
+	   4   7  15)
+
+	/ AR 1DR 2DR  RR 1DL  TL  RS MUL DT1 DT2 AME	Electric piano from sion2_tone.zms(E.PIANO) /
+(@ 8	  31   0   0   0   1  32   0   8   3   0   0
+	  31  12   8   5   1   1   0   8   3   0   0
+	  31   0   0   0   1  26   0   4   7   0   0
+	  31  12   8   5   1   1   0   4   7   0   0
+	/ AL  FB  OM /
+	   4   5  15 )
+
+(m1,3000)(aFm1,1)
+(m2,4000)(aFm2,2)
+(m3,3000)(aFm3,3)
+(m4,5000)(aFm4,4)
+(m5,4000)(aFm5,5)
+(m6,3000)(aFm6,6)
+(m7,3000)(aFm7,7)
+(m8,3000)(aFm8,8)
+
+(o162)
+
+/ bass /
+(t1)
+	[do]
+	@3@v113o3l8q8p3
+	|:3
+		|:3 ff16f16 :| ff16 g16	|:3 ee16e16 :| ee16 c16	|:3 dd16d16 :| dd16>b16
+		g<cfg16c16<e16>g16<d16>g16<c16>g16<d16>g16
+	:|
+	|:3 ff16f16 :| ff16 g16	|:3 ee16e16 :| ee16 c16	|:3 dd16d16 :| dd16>b16
+	<ggg16g16b16gg16<cd4>
+
+	~3
+	|:4 ee16e16 :|	|:4 ff16f16 :|	|:7 dd16d16 :|	c16c16>b16b16<
+	|:4 cc16c16 :|	|:4 ff16f16 :|	|:4 dd16d16 :|	ggb16gg16<d16>gg16<cd>
+	|:4 ee16e16 :|	|:4 ff16f16 :|
+	|:3 dd16d16 :|	de16f16	|:2 gg16g16 :| <c16c16c>b16b16b
+	|:3 aa16a16 :|	aa16g16	|:3 ff16f16 :|	ff16a16
+	|:4 bb16b16 :|	ggb16gg16<d16>gg16<fg>
+	_3
+	[loop]
+
+/ chorus low key /
+(t2)
+	[do]
+	@5@v115o2l1q8p3 @h100@s5@m16
+	g2.. g&g8 b2.. g&g8
+	g2.. g&g8 b2.. g2.. e16a16b16<e16>
+	g2.. g&g8 b2.. g&g8
+	g2.. g&g8 a2.. b&b8
+
+	_2
+	b<c>b b
+	g a b b
+	b<c>b<c
+	cc4.c4.c4dg
+	[loop]
+
+/ chorus middle key /
+(t3)
+	[do]
+	@5@v113o3l1q8p3 @h100@s5@m16
+	f2.. e&e8 d2.. e&e8
+	f2.. e&e8 d2.. e2.. >g16<c16d16g16
+	f2.. e&e8 d2.. e&e8
+	c2.. c&c8 d2.. g&g8
+	_2
+	gffg
+	cddd
+	gfdg
+	ff4.f4.f4gb
+	[loop]
+
+/ chorus high key /
+(t4)
+	[do]
+	@5@v115o3l1q8p3 @h100@s5@m16
+	c2.. c&c8 >g2..< c2.. >g4<
+	c2.. c&c8 >g2..< c2.. >c16g16g16<c16
+	c2.. c&c8 >g2..< c2.. >g4<
+	f2.. e&e8 f2.. d&d8
+
+	_2
+	eade
+	effg
+	eage
+	aa4.a4.a4b<d>
+	[loop]
+
+/ drums(STD) - melody /
+(t5)
+	[do]
+	@v123o2l16q8p3
+	|:4
+		|:7 @1c8c8@2c8@1cc :|
+			|1 @1cc8c@2c@1c@2cc :|
+			|2 @2c8c8@1cc@2cc :|
+			|3 @1cc8c@2c@1c@2cc :|
+			|4 @1cc@2c@1c@2c@1c@2cc
+	:|
+
+	@6@v117o5l8p3 @h60@s5@m16 @k0
+	e2&e efg a4.f4.e4
+	d2&d def f4gerdr
+	c2.de c2.de c2.cde efedr>b4g<
+	e2&e efga4.f4.a4
+	b2&b <cde dcre4.>g
+	a2.b<c> a2.b<c e2.fed2g2&g
+	[loop]
+
+/ drums(hihat - STD) /
+(t6)
+	@4@v120o4l16q1p3
+	ccq8c8_12c8~q1cc		/ 帳尻あわせ /
+	[do]
+	@4@v120o4q1p3
+	|:6 ccq8c8_12c8~q1cc :|
+	ccq8c8c8c8q1
+	|:3
+		|:7 ccq8c8_c8~q1cc :|
+		ccq8c8c8c8q1
+	:|
+
+	o2q8~3
+	|:3
+		@1c8c8@2c8@1ccccc8@2c8@1cc
+		@1cccc@2c8@1ccccc8@2c8c@1c
+	:|
+	|:3
+		@1c8c8@2c8@1ccccc8@2c8
+		|1 @1cccccc@2c8@1cc@2cccc@1cc@2cc :|
+		|2 @1cccccc@2c8@1ccccc8@2c8c@1c :|
+		|3 @4p2o4~4e4@2o2_c8c@1c @4p1o4~4c4@2o2_c8c@1c@2cc
+	:|
+	|:4
+		@1c8c8@2c8@1cc
+		|1 ccc8@2c8@1cc :|
+		|2 cccc@2c8@1cc :|
+		|3 ccc8@2c8@1cc :|
+		|4 @1cc @4o4~2p2e8_3c8p3~3d2&d8 o2
+	:|				/  ↑このクラッシュに余韻を /
+					/    持たせるため、上の帳尻が必要 /
+	[loop]
+
+/ bell - melody reverb /
+(t7)
+	[do]
+	@7@v112o4l16q1p3 @k0
+	|:3
+		|:2 gf<cggc>fg :|
+		|:2 ge<cggc>eg :|
+		|:2 gdg<dd>gdg :|
+		ge<cggc>eg
+		ge<cg>e<cgc>
+	:|
+	|:2 gf<cggc>fg :|
+	|:2 ge<cggc>eg :|
+	|:4 a<dgd> :|
+	|:4 b<dgd> :|
+
+	@6@v107o5l8q8p3 @h40@s5@m16 @k16 r8
+	e2&e efg a4.f4.e4
+	d2&d def f4gerdr
+	c2.de c2.de c2.cde efedr>b4g<
+	e2&e efga4.f4.a4
+	b2&b <cde dcre4.>g
+	a2.b<c> a2.b<c e2.fed2g2
+	[loop]
+
+/ bell echo - melody'(途中 crash 含む) /
+(t8)
+	@7@v98o4l16q8p3 @k12 r8
+	gf<cggc>fg		/ 帳尻あわせ 2（trk6同様） /
+	[do]
+	@7@v102o4l16p3 @k12
+		gf<cggc>fg
+		|:2 ge<cggc>eg :|
+		|:2 gdg<dd>gdg :|
+		ge<cggc>eg
+		ge<cg>e<cgc>
+	|:2
+		|:2 gf<cggc>fg :|
+		|:2 ge<cggc>eg :|
+		|:2 gdg<dd>gdg :|
+		ge<cggc>eg
+		ge<cg>e<cgc>
+	:|
+	|:2 gf<cggc>fg :|
+	|:2 ge<cggc>eg :|
+	|:4 a<dgd> :|
+	|:4 b<dgd> :|
+
+	@8@v120o4l8p1 @k0
+	e2 efg a4.f4.e4
+	d2&d def f4gerdrc&
+	c2&cc>b<c& c2&cc>b<c& c2&c>a<c>a< efedr>b4g<
+	e2&eefg a4.f4.a4
+	b2&b <cd @4p2o4@k16~7e4 @8o5p1@k0_cr @4p1o4~7@k16c4 @8o4p1@k0__4c~ga&
+	a2&ab<c>a& a2&ab<ce& e2&efed def g4
+	@4o4~5@k16p2e8_2c8p3~2d2.
+	[loop]
+
+(p)

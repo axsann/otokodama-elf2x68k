@@ -1,0 +1,54 @@
+.comment og1TK.zms µŸ∫ﬁ∞Ÿ?      composed by êÖñÏóTîV    arrenged by Takeo Koba
+
+(i)(b0)
+
+(m1,500)(a1,1)
+(m2,500)(a2,2)
+(m3,500)(a3,3)
+(m4,500)(a4,4)
+(m5,500)(a5,5)
+(m6,500)(a6,6)
+
+.wave_form  8,0,10 {0,0,1,2,3,4,5,6,10,12}
+
+/       AR 1DR 2DR  RR 1DL  TL  RS MUL DT1 DT2 AME   STRINGS
+(@14,   20,  0,  0,  2,  0, 22,  0,  1,  7,  0,  0
+        12,  0,  1,  5,  3,  0,  0,  1,  7,  0,  0
+        24,  0,  0,  0,  0, 23,  0,  0,  3,  0,  0
+        16,  0,  1,  6,  3,  5,  0,  2,  3,  0,  0
+/       AL  FB  OM
+         4,  5)
+
+(t1)t85 l8
+(t2)     K0 @14 @K4 Q7L8 @v113 @m8@h2@k5 @a1s,8 @s,3 p1 
+(t3)     K0 @14 @K3 Q7L8 @v113 @m8@h3@k4 @a1s,8 @s,3 p2 
+(t4)     K0 @14 @K2 Q7L2 @v97  @m8@h4@k3 @a1s,8 @s,5 p3 o5
+(t5)     K0 @14 @K2 Q7L2 @v97  @m8@h5@k2 @a1s,8 @s,5 p3 o4
+(t6)     K0 @14 @K1 Q7L8 @v102 @m8@h6@k1 @a1s,8 @s,7 p3 o3
+
+(t1,2,3,4,5,6) [k.sign +c,+d,+f,+g] [do] /E Major
+
+(t1) t60r4t90r4t102r4.t66rt78r4t85r4t66r4t56r4
+(t1) t96r2t108r4t85r4t60r4t80r4.t96r4t60r
+(t1) t46r4t90r4t102r4.t66rt78r4t85r4t66r4t56r4
+(t1) t66r4t80r4t96r4t108rt66rt70r4t80r4t108rt80rt46rt66r
+
+(t2) a4<_2c4._c~2d~e g4~4b4._4 a4_2g_ ecfe_d>b<ed>b4~2g4.r4.~4
+(t2) a4<_2c4._c~2d~e g4~4b4._4 gf_2d_ ef4.r~2e~a~ge1_2
+
+(t3) rg<c~2e_4fb4.~2>rb<d~f_4f!f!4c~2      /AM7 G#7 Bm7
+(t3) c>aa<c>_2bgbg~ rfb~<d_4ege~2>b!          /F#m7 EM7 Bb7
+(t3) rg<c~e_4fb4.~2>rb<d~f_4f!ec>b~2       /AM7 G#7 C#7
+(t3) <c>ga+~<d_4eg4.~2>rg!<c!~e_g!_b~g!~e_ /F#7 CM7/D
+
+/    AM7   G#7   Bm7   F#m7  EM7  Bb7  AM7 G#7 C#7 F#7 CM7/D
+(t4) c1_10 c!2~5>b2 ~5 b2_b2 b2 _ b-2~<c1~ d2~ e2_ e2  e2_ e1~
+(t5) g1_10 d2 ~5 f!2~5 e2_e2 g2 _ f!2~ e1~ f2~ b2_ a+2 a2_ g!1~
+(t6) a1_10 g2 ~5 c2 ~5 f2_f2 e2 _ d!2~ f1~ g2~ c2_ f2  f2_ d!1~
+
+(t1,2,3,4,5,6)[loop]
+
+
+
+(p)
+
