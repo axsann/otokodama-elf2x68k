@@ -1,4 +1,4 @@
-#include <sys/iocs.h>
+#include <x68k/iocs.h>
 #include "txfont.h"
 
 static char *page_ptr;		/* 表示画面の左上のアドレス */

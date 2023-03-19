@@ -1,5 +1,5 @@
 /* ƒ^ƒCƒgƒ‹‰æ–Ê‚Ì "OTOKODAMA" ‚Ì•¶Žš */
-#include <xsp2lib.h>
+#include <XSP2lib.H>
 
 #include "../otoko.h"
 #include "../effect.h"

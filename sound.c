@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <sys/iocs.h>
-#include <io.h>
+#include <strings.h>
+#include <x68k/iocs.h>
 #include "otoko.h"
 #include "zmcall.h"
 
@@ -20,7 +20,14 @@ static int music_size[MUSIC_MAX];	/* ↑       のサイズ */
 
 extern void Tini (void);
 
-
+int filelength(FILE *fp)
+{
+  fseek(fp, 0, SEEK_END);
+  int size = ftell(fp);
+  fseek(fp, 0, SEEK_SET);
+  
+  return size;
+}
 
 /* 起動時に１回だけ呼ばれる */
 int SoundInit0 (void)
@@ -46,7 +53,7 @@ int SoundInit0 (void)
 	while (fscanf (fp, "%s", str1) != EOF) {
 		if (ferror (fp) || feof (fp))
 			break;
-		if (!strcmpi (str1, "SE")) {
+		if (!strcasecmp (str1, "SE")) {
 			fscanf (fp, "%d %s", &data_no, &str1);
 			if ((fp2 = fopen (str1, "rb")) == NULL) {
 				static char e[256];
@@ -55,7 +62,7 @@ int SoundInit0 (void)
 				sprintf (e, "ファイル %s が読み込めません\n", str1);
 				Tini ();	/* 返ってこない */
 			}
-			se_size[data_no] = filelength (fileno (fp2));
+			se_size[data_no] = filelength (fp2);
 			if ((se_ptr[data_no] = malloc (se_size[data_no])) == NULL) {
 				static char e[256];
 				error_level = ERROR_FILE;
@@ -68,7 +75,7 @@ int SoundInit0 (void)
 			fgets (str1, 1024, fp);	/* 以下読み捨てる */
 			continue;
 		}
-		if (!strcmpi (str1, "MUSIC")) {
+		if (!strcasecmp (str1, "MUSIC")) {
 			fscanf (fp, "%d %s", &data_no, &str1);
 			if ((fp2 = fopen (str1, "rb")) == NULL) {
 				static char e[256];
@@ -77,7 +84,7 @@ int SoundInit0 (void)
 				sprintf (e, "ファイル %s が読み込めません\n", str1);
 				Tini ();	/* 返ってこない */
 			}
-			music_size[data_no] = filelength (fileno (fp2));
+			music_size[data_no] = filelength (fp2);
 			if ((music_ptr[data_no] = malloc (music_size[data_no])) == NULL) {
 				static char e[256];
 				error_level = ERROR_FILE;

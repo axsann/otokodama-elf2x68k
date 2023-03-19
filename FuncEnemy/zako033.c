@@ -1,5 +1,5 @@
 /* ‚S–Ê‚Å“oê‚·‚é~‚Ü‚Á‚ÄŒ‚‚Á‚Ä‚¢‚ê‚Î“–‚½‚ç‚È‚¢ƒUƒR */
-#include <xsp2lib.h>
+#include <XSP2lib.H>
 
 #include "../otoko.h"
 #include "../player.h"

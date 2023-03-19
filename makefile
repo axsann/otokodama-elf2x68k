@@ -1,17 +1,29 @@
 #	makefile for otoko.x
 
-CC	= gcc
-#CC	= 060loadhigh gcc
-#CFLAGS	=
-CFLAGS	= -O -fomit-frame-pointer -fstrength-reduce
-AS	= has
-LD	= hlk
+# makeの前にmake downloadの実行が必要
+
 INC	=
-LIBS	= xsp2lib.o libc.a libgnu.a libdos.a libiocs.a pcm8afnc.o apicglib.a
+LIBS_FLAGS	= -l XSP2lib.o -l PCM8Afnc.o -l APICGLIB.a
 LZH	= otoko100
 
-vpath	%.c	./;FuncEnemy/;FuncEffect/;
+# ヘッダ検索パス
+INCLUDE_FLAGS = -I./download/m68k-xelf/m68k-elf/include \
+	-I./download/x68k_xsp-965ea7f486896c592b6100b4e79aeb201091c888/XSP \
+	-I./download/x68k_xsp-965ea7f486896c592b6100b4e79aeb201091c888/PCM8Afnc \
+	-I./download/apicg/INCLUDE
+
+CROSS = m68k-xelf-
+CC = $(CROSS)gcc
+AS = $(CROSS)as
+LD = $(CROSS)gcc
+
+CFLAGS = -m68000 -O2 ${INCLUDE_FLAGS}
+LDFLAGS = -L./download/apicg/LIB \
+	-L./download/x68k_xsp-965ea7f486896c592b6100b4e79aeb201091c888/XSP \
+	-L./download/x68k_xsp-965ea7f486896c592b6100b4e79aeb201091c888/PCM8Afnc
+
 # .c ファイルはカレント又はここで指定したディレクトリに
+vpath	%.c	./:./FuncEnemy/:./FuncEffect/
 
 %.o:	%.c
 	$(CC) $(CFLAGS) -c $<
@@ -19,10 +31,14 @@ vpath	%.c	./;FuncEnemy/;FuncEffect/;
 all:	otoko.x maketbl.x
 
 clean:
-	rm -f *.bak *.o *.x otoko.ind otoko.dat TBL/*.TBL \
+	rm -f *.bak *.o *.elf* *.x otoko.ind otoko.dat TBL/*.TBL \
 	FuncEnemy/*.bak FuncEffect/*.bak \
 	DAT/*.bak DAT/*.o DAT/*.x \
 	sp/*.bak
+
+.PHONY: download
+download:
+	scripts/download.sh
 
 execonly:
 	rm -f *.bak *.o *.c *.h *.s makefile otoko.ind \
@@ -49,13 +65,13 @@ otoko.x:	otoko.o player.o shot.o \
 		titspark.o titmoji.o lastlaser.o lastplayer.o \
 		entry.o psearch.o \
 		gvram.o txfont.o sound.o zmcall.o
-#	$(LD) $^ -o $@ -l $(LIBS)
+	$(LD) $(LDFLAGS) $^ -o $@ $(LIBS_FLAGS)
 # fish.xの方は上の１行を、command.xの方は下の２行を有効にして下さい
-	echo $^ > otoko.ind
-	$(LD) -i otoko.ind -o $@ -l $(LIBS)
+#	echo $^ > otoko.ind
+#	$(LD) $(LDFLAGS) -i otoko.ind -o $@ $(LIBS_FLAGS)
 
 maketbl.x:	maketbl.o
-	$(LD) $^ -o $@ -l $(LIBS)
+	$(LD) $(LDFLAGS) $^ -o $@ $(LIBS_FLAGS)
 
 otoko.o:	otoko.c otoko.h player.h shot.h enemy.h eshot.h effect.h entry.h psearch.h txfont.h gvram.h sound.h
 player.o:	player.c otoko.h player.h shot.h eshot.h names.h effect.h entry.h priority.h txfont.h sound.h damage.h
@@ -129,7 +145,6 @@ gvram.o:	gvram.s
 txfont.o:	txfont.c txfont.h
 sound.o:	sound.c otoko.h zmcall.h
 zmcall.o:	zmcall.s
-
 
 maketbl.o:	maketbl.c
 

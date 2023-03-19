@@ -1,5 +1,5 @@
 /* ４面ボスのカバー (04V = 04 coVer) */
-#include <xsp2lib.h>
+#include <XSP2lib.H>
 
 #include "../otoko.h"
 #include "../enemy.h"

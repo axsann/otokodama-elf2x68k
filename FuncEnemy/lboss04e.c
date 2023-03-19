@@ -1,5 +1,5 @@
 /* ÇSñ É{ÉXç∂âEé® (04e = 04 ear) */
-#include <xsp2lib.h>
+#include <XSP2lib.H>
 
 #include "../otoko.h"
 #include "../player.h"

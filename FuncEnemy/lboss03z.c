@@ -1,6 +1,6 @@
 /* ３面ボスザコ (03z = 03 zako) */
 /* 一度に４基出現する小さいボス */
-#include <xsp2lib.h>
+#include <XSP2lib.H>
 
 #include "../otoko.h"
 #include "../player.h"

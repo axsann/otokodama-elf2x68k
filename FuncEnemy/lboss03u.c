@@ -1,6 +1,6 @@
 /* ３面ボスザコ・その２ (03u = 03 up) */
 /* ボスが出てきてから画面下から登場して合体するまで */
-#include <xsp2lib.h>
+#include <XSP2lib.H>
 
 #include "../otoko.h"
 #include "../player.h"

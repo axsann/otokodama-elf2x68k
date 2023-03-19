@@ -1,6 +1,6 @@
 /* ３面ボスパーツ (03p = 03 parts) */
 /* ボスに付いている４つのパーツ */
-#include <xsp2lib.h>
+#include <XSP2lib.H>
 
 #include "../otoko.h"
 #include "../player.h"

@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/download/m68k-xelf/m68k-elf/include",
+                "${workspaceFolder}/download/xdev68k-9b4a892cd14f9e637123a08b102150395e2d045d/include/xdev68k",
+                "${workspaceFolder}/download/x68k_xsp-965ea7f486896c592b6100b4e79aeb201091c888/XSP",
+                "${workspaceFolder}/download/x68k_xsp-965ea7f486896c592b6100b4e79aeb201091c888/PCM8Afnc",
+                "${workspaceFolder}/download/apicg/INCLUDE"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

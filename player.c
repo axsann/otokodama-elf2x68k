@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <sys/iocs.h>
-#include <xsp2lib.h>
+#include <x68k/iocs.h>
+#include <XSP2lib.H>
 
 #include "otoko.h"
 #include "player.h"

@@ -1,6 +1,6 @@
 /* ３面ボス銀玉 (03g = 03 gin) */
 /* ４つ出てくる小さなボスが噴火（？）する破壊可能弾 */
-#include <xsp2lib.h>
+#include <XSP2lib.H>
 
 #include "../otoko.h"
 #include "../player.h"

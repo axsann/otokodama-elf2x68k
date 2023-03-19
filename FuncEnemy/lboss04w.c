@@ -1,5 +1,5 @@
 /* ÇSñ É{ÉXç∂âEóÉ (04w = 04 wing) */
-#include <xsp2lib.h>
+#include <XSP2lib.H>
 
 #include "../otoko.h"
 #include "../player.h"

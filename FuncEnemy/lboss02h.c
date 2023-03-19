@@ -1,5 +1,5 @@
 /* ‚Q–Êƒ{ƒX“ª•” (02h = 02head) */
-#include <xsp2lib.h>
+#include <XSP2lib.H>
 
 #include "../otoko.h"
 #include "../player.h"

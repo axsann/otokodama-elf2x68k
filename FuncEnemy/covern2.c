@@ -1,5 +1,5 @@
 /* 左右のカバーを開けて弾・その２ */
-#include <xsp2lib.h>
+#include <XSP2lib.H>
 
 #include "../otoko.h"
 #include "../player.h"

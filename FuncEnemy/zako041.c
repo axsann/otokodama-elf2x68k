@@ -1,5 +1,5 @@
 /* ザコ４の弱いやつ（攻撃してこない） */
-#include <xsp2lib.h>
+#include <XSP2lib.H>
 
 #include "../otoko.h"
 #include "../player.h"

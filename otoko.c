@@ -4,10 +4,10 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include <sys/dos.h>
-#include <sys/iocs.h>
-#include <xsp2lib.h>
-#include <pcm8afnc.h>
+#include <x68k/dos.h>
+#include <x68k/iocs.h>
+#include <XSP2lib.H>
+#include <PCM8Afnc.H>
 #include <apicglib.h>
 
 #define GLOBAL_DEFINE		/* グローバル変数を確保する */
@@ -376,7 +376,9 @@ static short LoadXSP (char *fname)
 
 	/* REF_DAT[].ptr 補正 */
 	for (i = 0; i < r; i++)
-		(int) ref_dat[sizeof_ref + i].ptr += (int) (&frm_dat[sizeof_frm]);
+		ref_dat[sizeof_ref + i].ptr = (int) ref_dat[sizeof_ref + i].ptr + (int) (&frm_dat[sizeof_frm]);
+
+
 	sizeof_pcg += p;
 	sizeof_frm += f;
 	sizeof_ref += r;
